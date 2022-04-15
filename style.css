@@ -1,0 +1,108 @@
+body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    cursor: default;
+    background-color: #555;
+    position: relative;
+}
+
+.buitenkant{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 50%;
+    border: 25px solid black;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% + 200px);
+    box-sizing: border-box;
+}
+
+.wijzer{
+    position: absolute;
+    width: 10px;
+    height: 130px;
+    left: calc(50% - 5px);
+    bottom: 50%;
+    background-color: black;
+    z-index: 1;
+}
+
+.stip{
+    position: absolute;
+    left: calc(50% - 15px);
+    top: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+body:hover .buitenkant{
+    animation-name: kleur_en_schudden;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+body:hover .wijzer{
+    animation-name: ronddraaien;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    transform-origin: bottom;
+}
+
+@keyframes kleur_en_schudden {
+    0%{
+        border-color: green;
+    }
+    40%{
+        border-color: yellow;
+    }
+
+    80%{
+        transform: translateY(-10px);
+    }
+    82%{
+        transform: translateY(0px);
+    }
+    84%{
+        transform: translateY(-10px);
+    }
+    86%{
+        transform: translateY(0px);
+    }
+    88%{
+        transform: translateY(-10px);
+    }
+    90%{
+        transform: translateY(0px);
+    }
+    92%{
+        transform: translateY(-10px);
+    }
+    94%{
+        transform: translateY(0px);
+    }
+    96%{
+        transform: translateY(-10px);
+    }
+    98%{
+        transform: translateY(0px);
+    }
+    100%{
+        border-color: #a50000;
+    }
+}
+
+@keyframes ronddraaien{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
