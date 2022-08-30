@@ -15,4 +15,4 @@ If you go to my [school-website](https://i481695.hera.fhict.nl/stopwatch/), you 
 
 The project consists of a stopwatch. When you hover over this stopwatch it starts ticking. The closer it gets to 0, the faster it starts moving. The stopwatch also slowly turns red.
 
-This project is less extensive than I would have liked. Therefore I still plan to put a countdown timer in the stopwatch that you can set yourself. The time of the countdown animation is then also affected by the number of seconds you put there. So it works just like a real timer. Unfortunately I haven't had the time to do this yet.
+This project is less extensive than I would have liked. Therefore I still plan to put a countdown timer in the stopwatch that you can set yourself. The time of the countdown animation will also be affected by the number of seconds you put there. So it works just like a real timer. Unfortunately I haven't had the time to do this yet.
